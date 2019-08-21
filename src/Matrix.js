@@ -1,5 +1,5 @@
 import React, * as react from 'react';
-import { pattern1 } from './data.js'
+import { defaultPattern } from './data.js'
 import Cell from './Cell.js'
 
 export default class Matrix extends react.Component {
@@ -20,8 +20,10 @@ export default class Matrix extends react.Component {
     )
   }
 
-  defaultProps = {
-    matrix: pattern1
-  }
+
   
+}
+
+Matrix.defaultProps = {
+  values: defaultPattern
 }
