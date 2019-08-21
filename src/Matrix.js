@@ -14,7 +14,7 @@ export default class Matrix extends Component {
   render() {
     return (
       <div id="matrix">
-        {this.genMatrix(args)}
+        {this.genMatrix()}
       </div>
     )
   }

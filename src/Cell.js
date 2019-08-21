@@ -11,7 +11,9 @@ export default class Cell extends Component {
   }
 
   changeColor = () => {
-    this.state.color = "#333"
+    this.setState({
+      color: "#333"
+    })
   }
  
   render() {
