@@ -7,15 +7,21 @@ export default class Cell extends Component {
   //initialize input properties
   constructor(props) {
     super(props)
+    // state key of 'color'
     this.state = {
       color: this.props.value
-    } //define state as being whatever color is passed in
+    } //state.color is initially set to the 'value' prop passed from Matrix
   }
+
+
+
   changeColor = () => {
     this.setState({
       color: "#333"
     })
   }
+
+  //renders a <div> with a className of 'cell'
   render() {
     return (
       <div className="cell" style={{backgroundColor:this.state.color}} onClick={this.changeColor}>
