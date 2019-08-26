@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Matrix from './Matrix.js';
 
 class Cell extends Component {
     constructor(props) {
