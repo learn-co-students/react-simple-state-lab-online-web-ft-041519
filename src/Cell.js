@@ -6,13 +6,13 @@ export default class Cell extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      color: '#333'
+      color: props.value
     }
   }
  
   // our increment method makes use of the 'setState' method, which is what we use to alter state
   increment = () => {
-    const newCount = this.state.color
+    const newCount = '#333'
     this.setState({
       color: newCount
     })
