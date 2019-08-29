@@ -19,3 +19,14 @@ export default class Matrix extends Component {
   }
   
 }
+
+Matrix.defaultprops = {
+  values: ( () => {
+    const firstRow = ['#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00']
+    for (let i = 0; i < 10; ++i) {
+      firstRow.push(firstRow)
+    }
+    return firstRow
+  }
+  )
+}
